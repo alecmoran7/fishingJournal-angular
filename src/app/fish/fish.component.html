@@ -1,0 +1,23 @@
+<div class="container">
+  <h2>All Fish Entries</h2>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Fish number</th>
+        <th>Species</th>
+        <th>Weight (lbs.)</th>
+        <th>Location</th>
+        <th>Lure</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let fish of fishData; let i = index">
+        <td>{{i + 1}}</td>
+        <td>{{fish.species}}</td>
+        <td>{{fish.weight}}</td>
+        <td>{{fish.location}}</td>
+        <td>{{fish.lure}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

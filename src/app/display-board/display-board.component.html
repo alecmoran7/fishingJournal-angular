@@ -1,0 +1,12 @@
+<div class="display-board">
+  <h4>Total Fish Logged</h4>
+  <div class="number">
+    {{userCount}}
+  </div>
+  <div class="btn">
+    <button class="btn btn-warning" (click)="getFishData()">Show All Fish Data</button>
+  </div>
+  <div class="btn">
+    <input type="file" class="file-upload" (change)="uploadFile($event.target.files)">
+  </div>
+</div>
